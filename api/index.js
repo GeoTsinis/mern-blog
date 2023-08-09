@@ -22,10 +22,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-// thcOzKcyNzVYriTf
-mongoose.connect(
-  'mongodb+srv://geotsinis:thcOzKcyNzVYriTf@mern-blog-db.mx1flvg.mongodb.net/'
-);
 
 app.post('/register', async (req, res) => {
   const { username, password } = req.body;
